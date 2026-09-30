@@ -617,9 +617,11 @@ pip install -r requirements.txt
 # Ingest document
 python src/ingestion.py
 
-# Start FastAPI
-uvicorn app:app --reload
+## Outputs Screenshots:
 
-# Run benchmark tests
-python tests_sample_queries.py
+### Output1
+
+![Document Ingestion](screenshots/output1.png)
+
+
 ```
