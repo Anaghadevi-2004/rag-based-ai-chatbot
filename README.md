@@ -100,7 +100,7 @@ This project implements a complete RAG pipeline that:
                     │ • Retrieved Chunks    │
                     │ • Confidence Score    │
                     └───────────────────────┘
-
+```
 ## Key Features
 📄 PDF document ingestion
 ✂️ Recursive text chunking
@@ -621,7 +621,6 @@ python src/ingestion.py
 
 ### Output1
 
-![Document Ingestion](screenshots/output1.png)
+(screenshots/output1.png)
 
 
-```
