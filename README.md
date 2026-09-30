@@ -389,7 +389,7 @@ Response
     ],
     "confidence_score": 0.95
 }
-🧪 Testing
+## 🧪 Testing
 
 The project includes:
 
@@ -443,160 +443,6 @@ Decision-Making Layer:
 At the core of agentic systems is the decision-making layer...
 
 This confirms that the Pinecone retrieval layer is successfully returning relevant document chunks.
-
-📸 Screenshots
-1. Project Structure
-
-Add a screenshot showing the complete project structure.
-
-Save the image inside:
-
-screenshots/project-structure.png
-
-Then add:
-
-![Project Structure](screenshots/project-structure.png)
-2. Pinecone Index
-
-Add a screenshot of the Pinecone index showing:
-
-Index name
-Dimension
-Vector count
-Status
-
-Save it as:
-
-screenshots/pinecone-index.png
-
-Add:
-
-![Pinecone Index](screenshots/pinecone-index.png)
-3. Document Ingestion
-
-Add a screenshot of the terminal showing successful ingestion.
-
-Example:
-
-Loading document...
-Splitting text into chunks...
-Total chunks created: XX
-Connecting to Pinecone and preparing embeddings...
-Uploading batch 1...
-...
-Successfully ingested all XX chunks.
-
-Save it as:
-
-screenshots/ingestion.png
-
-Add:
-
-![Document Ingestion](screenshots/ingestion.png)
-4. FastAPI Server
-
-Add a screenshot showing:
-
-uvicorn app:app --reload
-
-with:
-
-Uvicorn running on http://127.0.0.1:8000
-Application startup complete.
-
-Save it as:
-
-screenshots/fastapi-server.png
-
-Add:
-
-![FastAPI Server](screenshots/fastapi-server.png)
-5. API Documentation
-
-FastAPI automatically provides interactive API documentation.
-
-Open:
-
-http://127.0.0.1:8000/docs
-
-Take a screenshot showing:
-
-POST /chat
-
-Save it as:
-
-screenshots/api-docs.png
-
-Add:
-
-![FastAPI Documentation](screenshots/api-docs.png)
-6. Successful RAG Response
-
-Use the FastAPI /docs interface or your test script to demonstrate a question such as:
-
-What is Agentic AI according to the eBook?
-
-The response should show:
-
-final_answer
-retrieved_context_chunks
-confidence_score
-
-Save the screenshot as:
-
-screenshots/rag-response.png
-
-Add:
-
-![RAG Response](screenshots/rag-response.png)
-7. Out-of-Document Query
-
-Take a screenshot showing the system handling:
-
-Who won the 2022 FIFA World Cup?
-
-The system should respond that the answer cannot be provided based on the document.
-
-Save as:
-
-screenshots/grounding-test.png
-
-Add:
-
-![Grounding Test](screenshots/grounding-test.png)
-📈 Example Testing Output
-
-Example terminal output:
-
---- Query 1: What is Agentic AI according to the eBook? ---
-
-FinalAnswer: Agentic AI refers to AI systems that can operate
-autonomously toward goals, make decisions, plan actions, and
-execute tasks using information from their environment.
-
-Retrieved Context Chunks: 5
-Confidence Score: 0.95
-
-Another example:
-
---- Query 3: What are the core components of an Agentic Architecture? ---
-
-FinalAnswer: The architecture includes components such as
-decision-making, planning, learning, and execution layers.
-
-Retrieved Context Chunks: 5
-Confidence Score: 0.95
-
-Out-of-document test:
-
---- Query 5: Who won the 2022 FIFA World Cup? ---
-
-FinalAnswer: I cannot answer based on the provided document.
-
-Retrieved Context Chunks: 5
-Confidence Score: 0.95
-
-Note: The confidence value currently represents a simple heuristic based on successful context retrieval, rather than a calibrated probability.
 
 🔄 Complete Data Flow
 
@@ -697,9 +543,9 @@ API keys are stored using environment variables.
 
 Example:
 
-GOOGLE_API_KEY=your_key
-GROQ_API_KEY=your_key
-PINECONE_API_KEY=your_key
+GOOGLE_API_KEY=My_actual_key
+GROQ_API_KEY=My_actual_key
+PINECONE_API_KEY=My_actual_key
 
 The .env file should never be committed to the repository.
 
@@ -709,39 +555,16 @@ The .gitignore file includes:
 venv/
 __pycache__/
 *.pyc
-🧪 Validation Strategy
-
-The application is validated using two types of questions.
-
-In-domain questions
-
-Questions whose answers are expected to exist in the Agentic AI eBook.
-
-Examples:
-
-What is Agentic AI?
-
-What are the components of an Agentic Architecture?
-
-How does Agentic AI differ from traditional automation?
-
-What role does memory play in Agentic AI?
-Out-of-domain question
-
-A question unrelated to the document:
-
-Who won the 2022 FIFA World Cup?
-
-This test verifies that the chatbot does not simply answer using the LLM's general knowledge.
 
 ⚠️ Current Limitations
 The confidence score is currently a simple heuristic based on whether context was retrieved.
 Pinecone similarity retrieval can return chunks even when the query is unrelated to the document.
 A production implementation could improve this by applying a similarity-score threshold or a dedicated relevance evaluation step.
 The current system is optimized for a single knowledge source.
-🔮 Future Improvements
 
-Potential improvements include:
+## 🔮 Future Improvements
+
+## Potential improvements include:
 
 Similarity score thresholding
 Cross-encoder reranking
@@ -756,7 +579,7 @@ Streamlit chat interface
 Evaluation using RAGAS or similar evaluation frameworks
 Query rewriting
 Retrieval fallback strategies
-📋 Requirements
+## 📋 Requirements
 
 The project uses the following dependencies:
 
@@ -775,7 +598,7 @@ streamlit>=1.32.0
 python-dotenv>=1.0.0
 ▶️ Quick Start
 # Clone repository
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone <https://github.com/Anaghadevi-2004/rag-based-ai-chatbot>
 
 # Enter project
 cd rag-agentic-ai
