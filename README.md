@@ -410,11 +410,11 @@ uvicorn app:app --reload
 
 ### 1. Output 1
 
-![Output 1](screenshots/output_1.png)
+![Output 1](screenshots/Output_1.png)
 
 ### 2. Output 2
 
-![Output 2](screenshots/output_2.png)
+![Output 2](screenshots/outptut_2.png)
 
 ### 3. Output 3
 
