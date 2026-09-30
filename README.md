@@ -1,4 +1,4 @@
-# 🤖 Agentic AI RAG Chatbot
+# Agentic AI RAG Chatbot
 
 A Retrieval-Augmented Generation (RAG) based AI chatbot that answers questions strictly using information retrieved from an Agentic AI eBook.
 
@@ -6,7 +6,7 @@ The project uses **Python, LangGraph, Pinecone, Google Gemini Embeddings, Groq L
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project implements a complete RAG pipeline that:
 
@@ -101,7 +101,7 @@ This project implements a complete RAG pipeline that:
                     │ • Confidence Score    │
                     └───────────────────────┘
 
-✨ Key Features
+## Key Features
 📄 PDF document ingestion
 ✂️ Recursive text chunking
 🧠 Google Gemini embeddings
@@ -115,7 +115,7 @@ This project implements a complete RAG pipeline that:
 🧪 Benchmark testing
 📊 Retrieved context and confidence score in API response
 
-🛠️ Technology Stack
+## Technology Stack
 Technology	Purpose
 Python	Core programming language
 LangChain	RAG components and integrations
@@ -128,7 +128,7 @@ Uvicorn	ASGI server
 PyPDF	PDF text extraction
 Streamlit	Optional UI
 python-dotenv	Environment variable management
-📂 Project Structure
+## 📂 Project Structure
 rag-agentic-ai/
 │
 ├── data/
@@ -167,7 +167,7 @@ Groq API key
 
 No OpenAI API key is required for the current implementation.
 
-🚀 Installation
+## Installation
 1. Clone the repository
 git clone <YOUR_GITHUB_REPOSITORY_URL>
 
@@ -205,7 +205,7 @@ fastapi
 uvicorn
 streamlit
 python-dotenv
-🔐 Environment Configuration
+Environment Configuration
 
 Create a .env file in the project root.
 
@@ -233,7 +233,7 @@ GOOGLE_API_KEY=your_google_api_key
 GROQ_API_KEY=your_groq_api_key
 PINECONE_API_KEY=your_pinecone_api_key
 PINECONE_INDEX_NAME=agentic-ai-index
-🗄️ Pinecone Configuration
+Pinecone Configuration
 
 Create a Pinecone index with:
 
@@ -247,7 +247,7 @@ GoogleGenerativeAIEmbeddings(
     model="models/gemini-embedding-001",
     output_dimensionality=768
 )
-📥 Document Ingestion
+Document Ingestion
 
 The ingestion pipeline is implemented in:
 
@@ -277,7 +277,7 @@ chunk_overlap=200
 
 This creates overlapping chunks to preserve contextual information between neighboring sections.
 
-▶️ Run Document Ingestion
+Run Document Ingestion
 
 Make sure the PDF exists at:
 
